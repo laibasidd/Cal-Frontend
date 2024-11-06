@@ -1,0 +1,121 @@
+
+.contact-form-container {
+    background-color: #ddd8d8;
+    padding: 20px; /* Sufficient padding for all screen sizes */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Start with a smaller width for mobile screens */
+    max-width: 500px; /* Cap the width on larger screens */
+    margin: 20px auto; /* Center the form horizontally */
+    overflow: hidden; /* Remove any extra scrollbars */
+    animation: fadeIn 1s ease-in-out; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  .contact-form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d0d0e;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .contact-form-label {
+    display: block;
+    color: #0d0d0e;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    margin-left: 0.7rem;
+  }
+  
+  /* Input field styling */
+  .contact-form-input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f7f7f9;
+    color: black;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 16px;
+    margin-left: 0.7rem;
+  }
+  .contact-form-input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Textarea styling */
+  .contact-form-textarea {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f9f9fc;
+    color: black;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    margin-bottom: 16px;
+    margin-left: 0.7rem;
+  }
+  .contact-form-textarea:focus,.contact-form-textarea:hover {
+    border-color: #007bff;
+  }
+  
+  /* Button styling */
+  .contact-form-button {
+    width: 95%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 0.8rem;
+  }
+  .contact-form-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Success and Error message styling */
+  .contact-form-success,
+  .contact-form-error {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .contact-form-success {
+    color: #38a169;
+  }
+  .contact-form-error {
+    color: #e53e3e;
+  }
+  
+  /* Responsive design adjustments */
+  @media (min-width: 640px) {
+    .contact-form-container {
+      width: 80%; /* Expand width for tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-form-container {
+      width: 60%; /* Expand width for desktops */
+    }
+  }
+  

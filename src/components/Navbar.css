@@ -1,0 +1,187 @@
+.navbar {
+  background-color: #1a1a2e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-logo:hover{
+  color: #9f7aea;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  position: relative;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+.nav-link:hover{
+  color: white;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 8px 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2a2a3e;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-link {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-link:hover {
+  background-color: #3a3a4e;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+css
+Copy code
+.nav-link,
+.nav-logo,
+.mobile-link,
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* Remove hover/focus outline and border */
+.nav-link:hover,
+.nav-link:focus,
+.nav-logo:hover,
+.nav-logo:focus,
+.mobile-link:hover,
+.mobile-link:focus,
+button:hover,
+button:focus {
+  outline: none;  /* Prevents outline on hover/focus */
+  border: none;   /* Ensures no border on hover/focus */
+  background: none; /* Ensures background remains clean */
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    background-color: #2a2a3e;
+    padding: 16px;
+  }
+
+  .mobile-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+  }
+
+  .mobile-link:hover {
+    background-color: #3a3a4e;
+  }
+
+  .mobile-dropdown {
+    margin-top: 8px;
+  }
+
+  .mobile-dropdown-title {
+    padding: 12px 16px;
+    font-weight: bold;
+  }
+
+  .mobile-dropdown-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    display: block;
+  }
+
+  .mobile-dropdown-link:hover {
+    background-color: #3a3a4e;
+  }
+}

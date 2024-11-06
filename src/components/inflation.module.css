@@ -1,0 +1,142 @@
+.calculatorContainer {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    animation: fadeIn 1s ease-in-out; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.leftSection {
+    flex: 1;
+    max-width: 220px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 90px;
+    margin-top: 50px;
+   background-color: #ccc;
+}
+
+.rightSection {
+    margin-top: 60px;
+    flex: 1;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: #ccc;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField label {
+    margin-bottom: 5px;
+}
+
+.inputField input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputField:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+  }
+  
+  .inputField:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.calculate {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #ddd;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.calculate:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.calculate:active,
+.calculate:focus,
+.clear:focus,
+.clear:active {
+  background-color: #007bff;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.clear {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #ddd;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.clear:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.resultContainer {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .calculatorContainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .leftSection,
+    .rightSection {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}

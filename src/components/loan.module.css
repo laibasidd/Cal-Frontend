@@ -1,0 +1,131 @@
+.calculatorContainer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.leftSection {
+    flex: 1;
+    max-width: 350px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ccc;
+}
+
+.inputField {
+    width: calc(100%);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputField:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+  }
+  
+  .inputField:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+
+.radioContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.radioItem {
+    display: flex;
+    align-items: center;
+}
+
+.buttonStyle {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.buttonStyle:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+.rightSection {
+    flex: 1;
+    max-width: 350px;
+    padding: 15px;
+    min-height: 250px; 
+    border-radius: 8px;
+   border: 1px solid;
+   margin-top: 10px;
+}
+
+.chartDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.chartContainer {
+    width: 200px;
+    height: 200px; 
+    margin-bottom: 15px;
+}
+
+.loanDetails {
+    display: flex;
+    flex-direction: column; /* Ensures details are in a column */
+    align-items: center; /* Centers the text */
+    text-align: center; /* Centers the text within the element */
+    color: black; /* Ensures text is visible */
+    margin-top: 8%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .calculatorContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .leftSection,
+    .rightSection {
+        max-width: 100%; 
+    }
+
+    .inputField,
+    .buttonStyle {
+        font-size: 14px;
+    }
+}

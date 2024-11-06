@@ -1,0 +1,110 @@
+.bmiContainer {
+    margin-top: 12%;
+    margin-bottom:10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    animation: fadeIn 1s ease-in-out; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bmiText {
+    flex: 1;
+    max-width: 220px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ccc;
+    margin-right: 90px;
+    margin-top: 20px;
+   background-color: #ccc;
+}
+
+.inputContainer {
+    margin-top: 30px;
+    flex: 1;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: #ccc;
+}
+
+.inputField {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputField:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+  }
+  
+  .inputField:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.buttonStyle {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #ddd;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.buttonStyle:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 13px;
+}
+
+.bmiResult {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #151615;
+}
+
+@media (max-width: 768px) {
+    .bmiContainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .bmiText,
+    .inputContainer {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
