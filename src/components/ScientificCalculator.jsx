@@ -13,7 +13,7 @@ const ScientificCalculator = () => {
   const calculate = async () => {
     try {
       const response = await axios.post(
-        "https://calculator-back.vercel.app/api/scientific-calculator/calculate",
+        "https://calculator-back-8ljb.vercel.app/api/scientific-calculator/calculate",
         { expression }
       );
 
