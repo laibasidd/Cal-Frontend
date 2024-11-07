@@ -20,7 +20,7 @@ const BMICalculator = () => {
 
     try {
       const response = await axios.post(
-        "https://calculator-back-8ljb.vercel.app/api/bmi/calculate",
+        "https://calculator-back-otm1.vercel.app/api/bmi/calculate",
         {
           weight: parseFloat(weight),
           height: parseFloat(height),

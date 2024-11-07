@@ -18,7 +18,7 @@ const ExpenseCalculator = () => {
     }
 
     try {
-      await axios.post("https://calculator-back-8ljb.vercel.app/api/expenses/add", {
+      await axios.post("https://calculator-back-otm1.vercel.app/api/expenses/add", {
         itemName,
         quantity,
         price,
@@ -35,7 +35,7 @@ const ExpenseCalculator = () => {
 
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get("https://calculator-back-8ljb.vercel.app/api/expenses");
+      const response = await axios.get("https://calculator-back-otm1.vercel.app/api/expenses");
       setExpenses(response.data.expenses);
       setTotal(response.data.total);
     } catch (error) {
@@ -45,7 +45,7 @@ const ExpenseCalculator = () => {
 
   const removeExpense = async (id) => {
     try {
-      await axios.delete(`https://calculator-back-8ljb.vercel.app/api/expenses/${id}`);
+      await axios.delete(`https://calculator-back-otm1.vercel.app/api/expenses/${id}`);
       fetchExpenses(); // Fetch updated list after deletion
     } catch (error) {
       setError(error.response?.data.error || "Error deleting expense");

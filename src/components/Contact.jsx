@@ -33,7 +33,7 @@ const ContactForm = () => {
     setSubmissionError(null);
 
     try {
-      const response = await fetch("https://calculator-back-8ljb.vercel.app/api/send-email", {
+      const response = await fetch("https://calculator-back-otm1.vercel.app/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

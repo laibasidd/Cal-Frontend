@@ -15,7 +15,7 @@ const InflationCalculator = () => {
     }
 
     try {
-      const response = await axios.post("https://calculator-back-8ljb.vercel.app/api/inflation", {
+      const response = await axios.post("https://calculator-back-otm1.vercel.app/api/inflation", {
         oldPrice: Number(oldPrice),
         newPrice: Number(newPrice),
       });
