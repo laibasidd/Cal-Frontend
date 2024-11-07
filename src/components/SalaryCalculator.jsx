@@ -27,7 +27,7 @@ const SalaryCalculator = () => {
 
     try {
       const response = await axios.post(
-        "https://calculator-back-otm1.vercel.app/api/salary/calculate",
+        "https://calculator-back.vercel.app/api/salary/calculate",
         {
           grossSalary: parseFloat(grossSalary),
           taxRate: parseFloat(taxRate),

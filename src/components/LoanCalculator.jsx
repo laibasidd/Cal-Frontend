@@ -30,7 +30,7 @@ const LoanCalculator = () => {
 
     try {
       const response = await axios.post(
-        "https://calculator-back-otm1.vercel.app/api/loan/calculate",
+        "https://calculator-back.vercel.app/api/loan/calculate",
         {
           amount: parseFloat(amount),
           interestRate: parseFloat(interestRate),

@@ -40,7 +40,7 @@ const BasicCal = () => {
 
     try {
       const response = await axios.post(
-        "https://calculator-back-otm1.vercel.app/api/calculator/basic",
+        "https://calculator-back.vercel.app/api/calculator/basic",
         {
           num1: Number(num1),
           num2: Number(num2),

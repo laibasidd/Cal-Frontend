@@ -21,7 +21,7 @@ const AgeCalculator = () => {
 
     try {
       const response = await axios.post(
-        "https://calculator-back-otm1.vercel.app/api/age/calculate",
+        "https://calculator-back.vercel.app/api/age/calculate",
         {
           year,
           month,
